@@ -53,6 +53,7 @@
 		42C8DD9C206D434000DF504D /* Trump_SmashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trump_SmashUITests.swift; sourceTree = "<group>"; };
 		42C8DD9E206D434000DF504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C8DDAC206D520E00DF504D /* trump-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "trump-sound.mp3"; path = "../../../Downloads/trump-sound.mp3"; sourceTree = "<group>"; };
+		42C8DDAE206D739800DF504D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		42C8DD6C206D434000DF504D = {
 			isa = PBXGroup;
 			children = (
+				42C8DDAE206D739800DF504D /* README.md */,
 				42C8DD77206D434000DF504D /* Trump Smash */,
 				42C8DD90206D434000DF504D /* Trump SmashTests */,
 				42C8DD9B206D434000DF504D /* Trump SmashUITests */,

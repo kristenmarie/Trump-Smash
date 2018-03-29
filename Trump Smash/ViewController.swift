@@ -59,6 +59,10 @@ class ViewController: UIViewController, ARSKViewDelegate {
         return node
     }
     
+    func randomInt(min: Int, max: Int) -> Int {
+        return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+    }
+    
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         

@@ -51,7 +51,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let trumpId = randomInt(min: 1, max: 6)
+        let trumpId = randomInt(min: 1, max: 5)
         
         let node = SKSpriteNode(imageNamed: "trump\(trumpId)")
         node.name = "trump"

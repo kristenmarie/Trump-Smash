@@ -23,6 +23,17 @@ class Scene: SKScene {
     
     override func didMove(to view: SKView) {
         // Setup your scene here
+        trumpsLabel.fontSize = 20
+        trumpsLabel.fontName = "STHeitiSC-Medium"
+        trumpsLabel.color = .white
+        trumpsLabel.position = CGPoint(x: 40, y: 50)
+        addChild(trumpsLabel)
+        
+        numberOfTrumpsLabel.fontSize = 30
+        numberOfTrumpsLabel.fontName = "STHeitiSC-Medium"
+        numberOfTrumpsLabel.color = .white
+        numberOfTrumpsLabel.position = CGPoint(x: 40, y:10)
+        addChild(numberOfTrumpsLabel)
     }
     
     override func update(_ currentTime: TimeInterval) {

@@ -20,14 +20,9 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        // Show statistics such as fps and node count
-        sceneView.showsFPS = true
-        sceneView.showsNodeCount = true
-        
-        // Load the SKScene from 'Scene.sks'
-        if let scene = SKScene(fileNamed: "Scene") {
-            sceneView.presentScene(scene)
-        }
+        let scene = Scene(size: sceneView.bounds.size)
+        scene.scaleMode = .resizeFill
+        sceneView.presentScene(scene)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,10 +51,12 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let trumpId = randomInt(min: 1, max: 6)
+        
+        let node = SKSpriteNode(imageNamed: "trump\(trumpId)")
+        node.name = "trump"
+        
+        return node
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

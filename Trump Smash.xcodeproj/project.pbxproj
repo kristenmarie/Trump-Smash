@@ -16,6 +16,7 @@
 		42C8DD87206D434000DF504D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C8DD85206D434000DF504D /* LaunchScreen.storyboard */; };
 		42C8DD92206D434000DF504D /* Trump_SmashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8DD91206D434000DF504D /* Trump_SmashTests.swift */; };
 		42C8DD9D206D434000DF504D /* Trump_SmashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8DD9C206D434000DF504D /* Trump_SmashUITests.swift */; };
+		42C8DDAD206D520E00DF504D /* trump-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42C8DDAC206D520E00DF504D /* trump-sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		42C8DD98206D434000DF504D /* Trump SmashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trump SmashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C8DD9C206D434000DF504D /* Trump_SmashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trump_SmashUITests.swift; sourceTree = "<group>"; };
 		42C8DD9E206D434000DF504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C8DDAC206D520E00DF504D /* trump-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "trump-sound.mp3"; path = "../../../Downloads/trump-sound.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				42C8DD7E206D434000DF504D /* ViewController.swift */,
 				42C8DD80206D434000DF504D /* Main.storyboard */,
 				42C8DD83206D434000DF504D /* Assets.xcassets */,
+				42C8DDAC206D520E00DF504D /* trump-sound.mp3 */,
 				42C8DD85206D434000DF504D /* LaunchScreen.storyboard */,
 				42C8DD88206D434000DF504D /* Info.plist */,
 			);
@@ -241,6 +244,7 @@
 				42C8DD7B206D434000DF504D /* Scene.sks in Resources */,
 				42C8DD87206D434000DF504D /* LaunchScreen.storyboard in Resources */,
 				42C8DD84206D434000DF504D /* Assets.xcassets in Resources */,
+				42C8DDAD206D520E00DF504D /* trump-sound.mp3 in Resources */,
 				42C8DD82206D434000DF504D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

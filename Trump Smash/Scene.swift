@@ -19,6 +19,7 @@ class Scene: SKScene {
             self.numberOfTrumpsLabel.text = "\(trumpCount)"
         }
     }
+    let killSound = SKAction.playSoundFileNamed("trump-sound", waitForCompletion: false)
     
     override func didMove(to view: SKView) {
         // Setup your scene here

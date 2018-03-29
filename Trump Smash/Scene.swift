@@ -11,6 +11,15 @@ import ARKit
 
 class Scene: SKScene {
     
+    let trumpsLabel = SKLabelNode(text: "Trumps")
+    let numberOfTrumpsLabel = SKLabelNode(text: "0")
+    var creationTime : TimeInterval = 0
+    var trumpCount = 0 {
+        didSet {
+            self.numberOfTrumpsLabel.text = "\(trumpCount)"
+        }
+    }
+    
     override func didMove(to view: SKView) {
         // Setup your scene here
     }

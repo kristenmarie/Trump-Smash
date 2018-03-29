@@ -13,10 +13,17 @@ class Scene: SKScene {
     
     let trumpsLabel = SKLabelNode(text: "Trumps")
     let numberOfTrumpsLabel = SKLabelNode(text: "0")
+    let scoreLabel = SKLabelNode(text: "Score")
+    let totalScoreLabel = SKLabelNode(text: "0")
     var creationTime : TimeInterval = 0
     var trumpCount = 0 {
         didSet {
             self.numberOfTrumpsLabel.text = "\(trumpCount)"
+        }
+    }
+    var score = 0 {
+        didSet {
+            self.totalScoreLabel.text = "\(score)"
         }
     }
     let killSound = SKAction.playSoundFileNamed("trump-sound", waitForCompletion: false)
@@ -34,6 +41,22 @@ class Scene: SKScene {
         numberOfTrumpsLabel.color = .white
         numberOfTrumpsLabel.position = CGPoint(x: 40, y:10)
         addChild(numberOfTrumpsLabel)
+        
+        let xPosition = frame.maxX - 40
+        
+        scoreLabel.fontSize = 20
+        scoreLabel.fontName = "STHeitiSC-Medium"
+        scoreLabel.color = .white
+        scoreLabel.position = CGPoint(x: xPosition, y: 50)
+        addChild(scoreLabel)
+        
+        totalScoreLabel.fontSize = 30
+        totalScoreLabel.fontName = "STHeitiSC-Medium"
+        totalScoreLabel.color = .white
+        totalScoreLabel.position = CGPoint(x: xPosition, y: 10)
+        addChild(totalScoreLabel)
+        
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -101,6 +124,7 @@ class Scene: SKScene {
                 
                 // Update the counter
                 trumpCount -= 1
+                score += 1
             }
         }
         

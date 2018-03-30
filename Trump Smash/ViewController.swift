@@ -20,7 +20,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        let scene = Scene(size: sceneView.bounds.size)
+        let scene = MenuScene(size: sceneView.bounds.size)
         scene.scaleMode = .resizeFill
         sceneView.presentScene(scene)
     }
